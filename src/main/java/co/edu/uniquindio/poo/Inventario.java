@@ -183,7 +183,7 @@ public class Inventario {
      */
     public void eliminarCamisa(int codigo1) {
         for (Camisa camisa : camisas) {
-            if (camisa.getNombre().equals(codigo1)) {
+            if (camisa.getCodigo1().equals(codigo1)) {
                 camisa.remove(camisa);
                 break;
 
@@ -206,7 +206,7 @@ public class Inventario {
     public boolean consultarCamisaPorCodigo(Collection<Camisa> camisas, int codigo1) {
         boolean centinela = false;
         for (Camisa camisa : camisas) {
-            if (camisa.getCodigo() == codigo1) {
+            if (camisa.getCodigo1() == codigo1) {
                 centinela = true;
             }
         }
@@ -231,7 +231,7 @@ public class Inventario {
      */
     public void eliminarPantalon(int codigo2) {
         for (Pantalon pantalon : pantalones) {
-            if (pantalon.getNombre().equals(codigo2)) {
+            if (pantalon.getCodigo2().equals(codigo2)) {
                 pantalon.remove(pantalon);
                 break;
 
@@ -279,7 +279,7 @@ public class Inventario {
      */
     public void eliminarZapato(int codigo3) {
         for (Zapato zapato : zapatos) {
-            if (zapato.getNombre().equals(codigo3)) {
+            if (zapato.getCodigo3().equals(codigo3)) {
                 zapato.remove(zapato);
                 break;
 
@@ -327,7 +327,7 @@ public class Inventario {
      */
     public void eliminarAccesorios(int codigo4) {
         for (Accesorio accesorio : accesorios) {
-            if (accesorio.getNombre().equals(codigo4)) {
+            if (accesorio.getCodigo4().equals(codigo4)) {
                 accesorio.remove(accesorio);
                 break;
 
